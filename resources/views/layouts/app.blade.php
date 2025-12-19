@@ -14,7 +14,7 @@
     <nav class="navbar navbar-dark mb-4 shadow">
         <div class="container">
             <a class="navbar-brand fw-bold" href="{{ route('pedidos.index') }}">
-                🔩 Ferretería "El thornillon"
+                Ferretería "El thornillon"
             </a>
         </div>
     </nav>

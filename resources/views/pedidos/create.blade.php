@@ -46,16 +46,17 @@
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label fw-bold">Estado Inicial *</label>
+                        <label class="form-label fw-bold">Estado *</label>
                         <select name="estado" class="form-select" required>
                             <option value="Pedido a proveedor">Pedido a proveedor</option>
                             <option value="En camino">En camino</option>
-                            <option value="Llegó">Ya Llegó (Para avisar)</option>
+                            <option value="Llegó"> Llegó </option>
+                            <option value="Entregado">Entregado</option>
                         </select>
                     </div>
 
                     <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary btn-lg">Guardar Apunte</button>
+                        <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
                         <a href="{{ route('pedidos.index') }}" class="btn btn-secondary">Cancelar</a>
                     </div>
                 </form>
