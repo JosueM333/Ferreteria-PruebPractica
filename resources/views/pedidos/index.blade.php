@@ -18,6 +18,7 @@
                     <tr>
                         <th>Material</th>
                         <th>Cantidad</th>
+                        <th>Unidades Med.</th>
                         <th>Cliente</th>
                         <th>Teléfono</th>
                         <th>Estado</th>
@@ -30,6 +31,7 @@
                     <tr>
                         <td class="fw-bold">{{ $pedido->material }}</td>
                         <td>{{ $pedido->cantidad }}</td>
+                        <td>{{ $pedido->unidadesmed }}</td>
                         <td>{{ $pedido->cliente }}</td>
                         <td>
                             <a href="tel:{{ $pedido->telefono }}" class="text-decoration-none">

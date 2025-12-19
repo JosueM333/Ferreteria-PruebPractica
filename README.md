@@ -19,9 +19,11 @@ Se definió la estructura de la tabla con los siguientes campos:
 | :--- | :--- | :--- |
 | material | string | si |
 | cantidad | string | si |
+| unidadesmed| string | si |
 | cliente | string | si |
 | telefono | strings | si |
 | estado | strings | si |
+
 
 ### Justifiación de la Tabla
 he decidido usar esta tabla para simplificar el diseño.

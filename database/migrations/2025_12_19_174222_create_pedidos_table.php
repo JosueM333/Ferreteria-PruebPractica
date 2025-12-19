@@ -9,19 +9,19 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-public function up(): void
+    public function up(): void
     {
         Schema::create('pedidos', function (Blueprint $table) {
-            $table->id(); 
-            
-            
-            $table->string('material');     
-            $table->string('cantidad');     
-            $table->string('cliente');       
-            $table->string('telefono');      
-            $table->string('estado');       
+            $table->id();
             
         
+            $table->string('material');
+            $table->decimal('cantidad', 10, 2); 
+            $table->string('unidadesmed');      
+            $table->string('cliente');
+            $table->string('telefono');
+            $table->string('estado');
+            
             $table->timestamps();
         });
     }

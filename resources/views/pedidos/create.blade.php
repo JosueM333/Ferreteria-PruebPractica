@@ -7,13 +7,13 @@
     <div class="col-md-6">
         <div class="card shadow">
             <div class="card-header bg-primary text-white">
-                <h4 class="mb-0">Anotar Pedido Especial</h4>
+                <h4 class="mb-0">Anotar Pedido</h4>
             </div>
             <div class="card-body">
                 
                 @if ($errors->any())
                     <div class="alert alert-danger">
-                        <ul>
+                        <ul class="mb-0">
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
                             @endforeach
@@ -26,12 +26,31 @@
 
                     <div class="mb-3">
                         <label class="form-label fw-bold">Material *</label>
-                        <input type="text" name="material" class="form-control" placeholder="Ej: Tubo cobre 1/2 pulgada" required>
+                        <input type="text" name="material" class="form-control" placeholder="Ej: Cable eléctrico #12" required>
                     </div>
 
-                    <div class="mb-3">
-                        <label class="form-label fw-bold">Cantidad *</label>
-                        <input type="text" name="cantidad" class="form-control" placeholder="Ej: 2 metros / 1 caja" required>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-bold">Cantidad (Número) *</label>
+                            <input type="number" name="cantidad" class="form-control" placeholder="0.00" step="0.01" min="0" required>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-bold">Unidad de Medida *</label>
+                            <select name="unidadesmed" class="form-select" required>
+                                <option value="">Seleccione...</option>
+                                <option value="Unidad(es)">Unidad(es)</option>
+                                <option value="Metro(s)">Metro(s)</option>
+                                <option value="Centímetro(s)">Centímetro(s)</option>
+                                <option value="Milímetro(s)">Milímetro(s)</option>
+                                <option value="Kilo(s)">Kilo(s)</option>
+                                <option value="Libra(s)">Libra(s)</option>
+                                <option value="Litro(s)">Litro(s)</option>
+                                <option value="Galón(es)">Galón(es)</option>
+                                <option value="Caja(s)">Caja(s)</option>
+                                <option value="Juego/Kit">Juego/Kit</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div class="row">
@@ -46,12 +65,13 @@
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label fw-bold">Estado *</label>
+                        <label class="form-label fw-bold">Estado Inicial *</label>
                         <select name="estado" class="form-select" required>
                             <option value="Pedido a proveedor">Pedido a proveedor</option>
                             <option value="En camino">En camino</option>
-                            <option value="Llegó"> Llegó </option>
-                            <option value="Entregado">Entregado</option>
+                            <option value="Llegó">Llegó</option>
+                            <option value="Llegó">Entregado</option>
+
                         </select>
                     </div>
 
