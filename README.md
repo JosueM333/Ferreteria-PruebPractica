@@ -66,8 +66,11 @@ CREATE DATABASE FERRETERIABDX;
 2. Formulario
 
 <img src="img/formulario.png" width="600" alt="Registrar Nuevo Ingreso">
+<img src="img/formulario2.png" width="600" alt="Registrar Nuevo Ingreso">
 
 3. Vista Móvil
 
-<img src="img/celular.png" width="600" alt="Registrar Nuevo Ingreso">
+<img src="img/celular33.png" width="600" alt="Registrar Nuevo Ingreso">
+
+
 
